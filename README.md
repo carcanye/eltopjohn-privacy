@@ -118,15 +118,22 @@ Connect— hay que rellenarlos a mano, y tienen que cuadrar con lo que dice
 - [ ] **Crear la cuenta `eltopjohn@gmail.com`** y comprobar que llegan los
       correos. Sale en las cinco páginas; si no existe, el enlace de soporte que
       revisa la tienda no lleva a ningún sitio.
-- [ ] **El nombre del responsable.** Ahora pone «Gestiamigos». Si vas a vender
-      en la UE como autónomo, el RGPD pide el nombre con el que respondes
-      legalmente: cámbialo en `privacidad.html` y en `terminos.html`.
+- [ ] **El nombre del responsable.** Ahora pone «Gestiamigos», que es el nombre
+      de desarrollador que ya usas en `app.json` y en el id del paquete. Mientras
+      la app sea gratis, con eso y un correo que conteste vale.
+      El día que se cobre cambia el cuadro, y no por esta página: **la tienda
+      publica tu identidad de todas formas**. Google Play exige una **dirección
+      física pública** en la ficha a quien tenga app de pago o compras dentro, y
+      Apple muestra como vendedor el **nombre legal del titular** cuando la
+      cuenta es de particular. Cuando llegue ese momento, que la política diga lo
+      mismo que la ficha: se cambia en `privacidad.html` y en `terminos.html`.
 - [ ] **Los botones de tienda.** En `index.html` están como «Pronto en…»
       (`<span class="store soon">`). Cuando cada ficha esté publicada, cambia el
       `span` por el `<a href="…">` que hay comentado justo encima.
-- [ ] **Confirmar dónde está la base de datos.** La política dice que los datos
-      técnicos pueden tratarse fuera del EEE. Si el proyecto de Supabase está en
-      una región europea, mejor decirlo con nombre y apellidos.
+- [x] **Dónde está la base de datos.** El proyecto de Supabase va en
+      `eu-west-1` (Irlanda), así que la política ya dice que los reportes y los
+      contadores se guardan **en la Unión Europea**. Si algún día se migra el
+      proyecto a otra región, esa frase deja de ser verdad y hay que cambiarla.
 
 ## Mantenerla
 
